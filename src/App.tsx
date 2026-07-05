@@ -258,7 +258,9 @@ function App() {
         <p>© {activeYear} Anup Singh Lodh</p>
         <div>
           <a href="mailto:asingh29240@gmail.com">Email</a>
-          <span>LinkedIn</span>
+          <a href="https://www.linkedin.com/in/anupsinghlodh8345/" target="_blank" rel="noreferrer">
+            LinkedIn
+          </a>
           <a href="https://github.com/AnupSinghLodh" target="_blank" rel="noreferrer">
             GitHub
           </a>
@@ -326,11 +328,11 @@ function Hero() {
       <div className="hero-shell" style={heroStyle}>
         <div className="hero-content">
           <p className="eyebrow status-line">
-            <span /> Backend & Automation Developer
+            <span /> Full Stack Developer
           </p>
           <AnimatedName text="Anup Singh Lodh" />
           <p className="hero-copy">
-            Backend-focused developer building browser automation, database-backed applications, and practical web
+            Full stack developer building browser automation, database-backed applications, and practical web
             systems with JavaScript, Node.js, Puppeteer, React, and MongoDB.
           </p>
           <div className="hero-actions" aria-label="Primary actions">
