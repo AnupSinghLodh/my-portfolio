@@ -425,7 +425,7 @@ h3 {
 }
 
 .animated-title {
-  perspective: 900px;
+  perspective: 500px;
 }
 
 .animated-title .char {
