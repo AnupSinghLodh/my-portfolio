@@ -38,8 +38,8 @@ const stack = [
 ];
 
 const quickFacts = [
-  ["Current role", "Software Engineering Intern"],
-  ["Core focus", "Backend and Automation"],
+  ["Past role", "Software Engineering Intern"],
+  ["Core focus", "Full stack Development"],
   ["Education", "B.Tech CSE, MITS"],
   ["Location", "Gwalior, MP"],
 ];
@@ -118,14 +118,19 @@ const projects: Project[] = [
 
 const credentials: Credential[] = [
   {
-    meta: "Nov 2022 - Jun 2026",
-    title: "Madhav Institute of Technology and Science",
-    detail: "B.Tech, Computer Science & Engineering | CGPA: 7.545",
-  },
-  {
     meta: "2021",
     title: "Government Subhash Excellence Higher Secondary School",
     detail: "Class XII, MPBSE | Score: 97.2%",
+  },
+  {
+    meta: "Nov 2022 - Jun 2026",
+    title: "Madhav Institute of Technology and Science",
+    detail: "B.Tech, Computer Science & Engineering | CGPA: 7.63",
+  },
+  {
+    meta: "Aug 2024 - Nov 2024",
+    title: "Cyber Security and Privacy (NPTEL)",
+    detail: "IIT Madras",
   },
   {
     meta: "Jan 2025 - Apr 2025",
@@ -133,9 +138,9 @@ const credentials: Credential[] = [
     detail: "IIT Madras",
   },
   {
-    meta: "Aug 2024 - Nov 2024",
-    title: "Cyber Security and Privacy (NPTEL)",
-    detail: "IIT Madras",
+    meta: "Jun 2026",
+    title: "NPTEL Discipline Star",
+    detail: "IIT Roorkee",
   },
 ];
 
@@ -380,7 +385,7 @@ function Hero() {
           </div>
           <div className="dashboard-metrics">
             <Metric value="4+" label="Core project areas" target={4} suffix="+" />
-            <Metric value="7.545" label="CSE CGPA" target={7.545} decimals={3} />
+            <Metric value="7.63" label="CSE CGPA" target={7.63} decimals={2} />
             <Metric value="97.2%" label="Class XII score" target={97.2} suffix="%" decimals={1} />
           </div>
         </aside>
@@ -666,8 +671,11 @@ function About() {
       <SectionHeading eyebrow="About" title="Focused on dependable software and clean user experiences." id="about-title" />
       <div className="intro-copy">
         <p>
-          I am a Computer Science undergraduate at Madhav Institute of Technology and Science with hands-on experience
-          in backend development, browser automation, and full-stack web projects.
+          Results-driven Computer Science graduate with hands-on experience in backend automation, 
+          desktop application development, and full-stack web technologies. Proven track record of 
+          engineering complex workflows and business tools during internship at ixigo. Eager to 
+          leverage proficiency in JavaScript, Node.js and React.js to build scalable, high-impact
+          software solutions in a full-time engineering role.
         </p>
         <p>
           My work combines JavaScript ecosystems, database-backed applications, and practical engineering habits built
@@ -722,16 +730,32 @@ function Experience() {
       <SectionHeading eyebrow="Experience" title="Building automation and backend workflows at ixigo." id="experience-title" />
       <article className="timeline-item">
         <div className="timeline-meta">
-          <span>Dec 2025 - Present</span>
+          <span>Dec 2025 - Jun 2026</span>
           <span>Gurugram, India</span>
         </div>
         <div className="timeline-body">
-          <h3>Software Engineering Intern</h3>
-          <p className="company">ixigo</p>
+          <h3>Software Developer Intern</h3>
+          <p className="company">Ixigo</p>
           <ul>
             <li>
-              Worked on automation and backend workflows using JavaScript, Node.js, and Puppeteer for browser-based task
-              execution.
+              Online Login Management System (OLMS): Developed a desktop management application using Electron, 
+              JavaScript, HTML, and CSS to monitor booking agents, track real-time wallet balances, manage daily 
+              ticket limits, and audit comprehensive transaction histories.
+            </li>
+            <li>
+              Automated Web Check-in & Boarding Pass Generation: Built robust browser automation scripts to 
+              perform web check-ins across multiple airline platforms. The automation handles PNR and passenger
+              data extraction, bypasses mandatory policy agreements, and automatically downloads the final PDF 
+              boarding passes.
+            </li>
+            <li>
+              Core Automation & Collaboration: Utilized Node.js and Puppeteer to drive backend browser tasks,
+              while managing version control, task tracking, and merge requests via GitLab in an agile team environment.
+            </li>
+            <li>
+              No-Show Refund Automation (Air India Express): Engineered automated workflows to process flight no-shows.
+             The scripts automatically identify passengers who missed their departures and navigate airline portals to 
+              calculate and execute partial or tax refunds according to specific airline penalty policies.
             </li>
             <li>
               Used GitLab for version control, merge requests, code collaboration, and tracking development tasks in a
@@ -957,6 +981,9 @@ function Contact() {
       <div className="contact-actions">
         <MagneticLink className="button primary" href="mailto:asingh29240@gmail.com">
           asingh29240@gmail.com
+        </MagneticLink>
+        <MagneticLink className="button secondary" href="https://www.linkedin.com/in/anupsinghlodh8345/" target="_blank" rel="noreferrer">
+          LinkedIn profile
         </MagneticLink>
         <MagneticLink className="button secondary" href="https://github.com/AnupSinghLodh" target="_blank" rel="noreferrer">
           GitHub profile
