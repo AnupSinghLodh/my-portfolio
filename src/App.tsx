@@ -213,7 +213,7 @@ function App() {
       <div className="scroll-progress" style={{ transform: `scaleX(${scrollProgress})` }} aria-hidden="true" />
       <header className={`site-header ${isScrolled ? "is-scrolled" : ""} ${isMenuOpen ? "nav-open" : ""}`}>
         <a className="brand" href="#top" aria-label="Anup Singh Lodh home">
-          ASL
+          <img src="assets/logo2.png" alt="logoImage">
         </a>
         <nav className="site-nav" aria-label="Main navigation">
           {navItems.map((item) => (
