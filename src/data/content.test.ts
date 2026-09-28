@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { about, contact, experience, hero, heroStats, navItems, projects, quickFacts, sectionIds } from "./content";
+import { about, contact, experience, hero, heroStats, navItems, projects, quickFacts, sectionIds, skillGroups } from "./content";
 
 describe("content", () => {
   it("has a nav item for every section id, in page order", () => {
@@ -56,5 +56,11 @@ describe("content", () => {
     expect(aboutText).toContain("Graduate Engineer Trainee at SolarSquare");
     expect(aboutText).not.toMatch(/looking for/i);
     expect(contact.body).not.toMatch(/full-time|roles/i);
+  });
+
+  it("lists the Nakama stack in skills", () => {
+    const items = (title: string) => skillGroups.find((group) => group.title === title)?.items;
+    expect(items("Databases")).toEqual(expect.arrayContaining(["PostgreSQL", "Prisma"]));
+    expect(items("Frameworks & Libraries")).toContain("Socket.IO");
   });
 });

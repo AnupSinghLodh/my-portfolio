@@ -142,9 +142,9 @@ export const skillsSection = {
 
 export const skillGroups: SkillGroup[] = [
   { title: "Languages", items: ["C++", "Python", "JavaScript", "TypeScript", "HTML5", "CSS"] },
-  { title: "Frameworks & Libraries", items: ["React", "Node.js", "Express", "Tailwind CSS", "Puppeteer", "Electron", "Vite"] },
+  { title: "Frameworks & Libraries", items: ["React", "Node.js", "Express", "Socket.IO", "Tailwind CSS", "Puppeteer", "Electron", "Vite"] },
   { title: "Developer Tools", items: ["Git", "GitLab", "GitHub", "Postman", "Docker", "GitLab CI"] },
-  { title: "Databases", items: ["MongoDB", "Redis (basics)"] },
+  { title: "Databases", items: ["PostgreSQL", "Prisma", "MongoDB", "Redis (basics)"] },
   {
     title: "Computer Science Concepts",
     items: [
